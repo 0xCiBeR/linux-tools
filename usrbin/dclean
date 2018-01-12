@@ -1,0 +1,14 @@
+#!/bin/bash
+######################################################
+########## Herramientas Utiles CiberSystems ##########
+##########         Archivo: dclean          ##########
+##########       Uso: Purga directorio      ##########
+##########      Comando: dclean DIRECTORIO  ##########
+######################################################
+if [ -z "$1" ]
+	then
+		echo '[ERROR] No parameters recived.'
+	else
+		echo '[INFO] Cleaning directory...'
+		rm -rf $1/*
+fi
