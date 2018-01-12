@@ -1,0 +1,10 @@
+#!/bin/bash
+######################################################
+########## Herramientas Utiles CiberSystems ##########
+##########         Archivo: usys            ##########
+##########   Uso: Actualizacion Sistema     ##########
+##########      Comando: usys               ##########
+######################################################
+echo '[INFO] Iniciando actualizacion de sistema'
+apt-get update && apt-get upgrade -y
+echo '[INFO] Actualizacion de sistema completada'
