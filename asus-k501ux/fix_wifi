@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "options asus_nb_wmi wapf=4" | sudo tee /etc/modprobe.d/asus_nb_wmi.conf
