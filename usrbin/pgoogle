@@ -1,0 +1,15 @@
+#!/bin/bash
+######################################################
+########## Herramientas Utiles CiberSystems ##########
+##########         Archivo: pgoogle         ##########
+##########         Uso: Pingeo a Google     ##########
+##########      Comando: pgoogle VECES      ##########
+######################################################
+echo '[INFO] Pinging google.com...';
+if [ -z $1 ]
+	then 
+		ping google.com
+	else 
+		ping google.com -c $1
+fi
+echo '[INFO] Finished pinging.';
