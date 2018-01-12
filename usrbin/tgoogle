@@ -1,0 +1,15 @@
+#!/bin/bash
+######################################################
+########## Herramientas Utiles CiberSystems ##########
+##########         Archivo: tgoogle         ##########
+##########         Uso: Tracert a Google    ##########
+##########      Comando: tgoogle HOPS       ##########
+######################################################
+echo '[INFO] Tracing route to google.com...'
+if [ -z $1 ]
+	then
+		traceroute google.com > tgoogle.log
+	else
+		traceroute google.com -m $1 > tgoogle.log
+fi
+echo '[INFO] Finished tracing route!'
